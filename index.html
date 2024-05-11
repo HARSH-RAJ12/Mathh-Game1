@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Game: Lateral Surface Area</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Calculate the Lateral Surface Area</h1>
+<div id="formula">
+    2 × <div class="label">Height</div> × [(<div class="label">Length</div>) + (<div class="label">Width</div>)] = 
+    <div class="label">Lateral Surface Area:</div>
+</div>
+
+<div id="formula">
+    2 × <span id="height" ondrop="drop(event)" ondragover="allowDrop(event)"></span> × (<span id="length" ondrop="drop(event)" ondragover="allowDrop(event)"></span> + <span id="width" ondrop="drop(event)" ondragover="allowDrop(event)"></span>) = 
+    <span id="targetArea">50 cm²</span> <br> <br>
+    2 × <span id="height" ondrop="drop(event)" ondragover="allowDrop(event)"></span> × (<span id="length" ondrop="drop(event)" ondragover="allowDrop(event)"></span> + <span id="width" ondrop="drop(event)" ondragover="allowDrop(event)"></span>) = 
+    <span id="targetArea">64 cm²</span> <br> <br>
+    2 × <span id="height" ondrop="drop(event)" ondragover="allowDrop(event)"></span> × (<span id="length" ondrop="drop(event)" ondragover="allowDrop(event)"></span> + <span id="width" ondrop="drop(event)" ondragover="allowDrop(event)"></span>) = 
+    <span id="targetArea">66 cm²</span> <br> <br>
+    2 × <span id="height" ondrop="drop(event)" ondragover="allowDrop(event)"></span> × (<span id="length" ondrop="drop(event)" ondragover="allowDrop(event)"></span> + <span id="width" ondrop="drop(event)" ondragover="allowDrop(event)"></span>) = 
+    <span id="targetArea">56 cm²</span>
+</div>
+<table>
+  <tr id="values">
+    <td>Set Length</th>
+    <td><div draggable="true" ondragstart="drag(event)" id="3cm">3 cm</div></td>
+    <td><div draggable="true" ondragstart="drag(event)" id="4cm">4 cm</div></td>
+    <td> <div draggable="true" ondragstart="drag(event)" id="5cm">5 cm</div></td>
+    
+
+  </tr>
+   <tr id="values">
+    <td>Set Height</th>
+    <td><div draggable="true" ondragstart="drag(event)" id="2cm">2 cm</div></td>
+    <td><div draggable="true" ondragstart="drag(event)" id="3cm">4 cm</div></td>
+    <td> <div draggable="true" ondragstart="drag(event)" id="4cm">6 cm</div></td>
+
+  </tr>
+   <tr id="values">
+    <td>Set Width</th>
+    <td><div draggable="true" ondragstart="drag(event)" id="2cm">2 cm</div></td>
+    <td><div draggable="true" ondragstart="drag(event)" id="3cm">3 cm</div></td>
+    <td> <div draggable="true" ondragstart="drag(event)" id="4cm">4 cm</div></td>
+
+  </tr>
+</table>
+<!--<div id="values">
+    <div draggable="true" ondragstart="drag(event)" id="3cm">3 cm</div>
+    <div draggable="true" ondragstart="drag(event)" id="4cm">4 cm</div>
+    <div draggable="true" ondragstart="drag(event)" id="6cm">6 cm</div>
+    
+</div>-->
+<button onclick="checkAnswer()">Check Answer</button>
+<div id="result"></div>
+<script src="script.js"></script>
+</body>
+</html>
